@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigurumi: Amor a cada laçada</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Amigurumi: Amor a cada laçada">
+    <meta property="og:description" content="Peças exclusivas feitas à mão com lã hipoalergênica.">
+    <meta property="og:image" content="link-de-uma-foto-sua.jpg">
+    
+<style>
+:root {
+    --cor-principal: #ff8fa3; 
+    --cor-fundo: #fffafb10;
+    --cor-texto: #555;
+    --cor-bloco: #ffffff5f;
+    --transicao: 0.3s;
+}
+
+/* Cores para o Modo Escuro */
+.dark-mode {
+    --cor-fundo: #1a1a1a;
+    --cor-texto: #e0e0e062;
+    --cor-bloco: #2d2d2d;
+    --cor-principal: #7c4cbf;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    transition: background-color var(--transicao), color var(--transicao);
+}
+
+.bloco {
+    background: var(--cor-bloco) !important; /* Força a troca da cor do card */
+    color: var(--cor-texto);
+    transition: background var(--transicao);
+}
+
+body {
+font-family: 'Quicksand', sans-serif;
+background-color: var(--cor-fundo);
+color: var(--cor-texto);
+margin: 0;
+line-height: 1.6;
+text-align: center;
+     }
+
+header {
+background-color: var(--cor-principal);
+padding: 40px 20px;
+color: rgb(195, 146, 235);
+border-bottom: 5px solid #b379ea;
+        }
+
+ h1 { margin: 0; font-size: 2.5em; }
+
+.container {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 20px;
+           }
+
+.bloco {
+ margin: 40px 0;
+ padding: 20px;
+ background: rgb(190, 138, 241);
+ border-radius: 15px;
+ box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      }
+
+ /* Estilo das Imagens */
+ .carrossel {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ gap: 15px;
+ margin-top: 20px;
+            }
+
+ .carrossel img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover; /* Faz as imagens ficarem do mesmo tamanho sem distorcer */
+   border-radius: 10px;
+   transition: transform 0.3s;
+                }
+
+        .carrossel img:hover {
+            transform: scale(1.05);
+        }
+
+  /* Botão do WhatsApp */
+ button {
+            background-color: #25d366;
+            color: rgba(255, 255, 255, 0.867);
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #128c7e;
+        }
+
+    details {
+    background: #ffffff36;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    border: 1px solid #eeeeee2e;
+}
+
+details:hover {
+    border-color: var(--cor-principal);
+    background-color: #fffafb27;
+}
+
+summary {
+    font-weight: bold;
+    outline: none;
+}
+    </style>
+</head>
+<body>
+
+<div style="text-align: right; padding: 10px;">
+<button id="dark-toggle" style="padding: 8px 15px; font-size: 0.8em; background: var(--cor-principal); cursor: pointer;">
+     🌓 Alternar Modo
+</button>
+</div>
+
+
+<header> 
+    <h1>Amigurumi: Amor a cada laçada</h1>  
+</header>   
+
+<div class="container">
+   <div class="container">
+    <section class="bloco">
+        <h2>Por que nossos Amigurumis?</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; margin-top: 20px;">
+            <div style="flex: 1; min-width: 150px;">
+                <span style="font-size: 2em;">🧶</span>
+                <p><strong>100% Artesanal</strong><br>Peças únicas feitas à mão.</p>
+            </div>
+            <div style="flex: 1; min-width: 150px;">
+                <span style="font-size: 2em;">👶</span>
+                <p><strong>Seguro para Bebês</strong><br>Olhos com trava e linha antialérgica.</p>
+            </div>
+            <div style="flex: 1; min-width: 150px;">
+                <span style="font-size: 2em;">🧼</span>
+                <p><strong>Fácil de Lavar</strong><br>Não desbota e não deforma.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bloco">
+        <h2>Nosso trabalho</h2> 
+        <p>Transformamos fios em memórias. Dê uma olhada em alguns de nossos projetos:</p>
+        <div class="carrossel">
+            <img src="imagens.landingpage/unnamed (1).jpg" alt="Patinho amarelo">
+            <img src="imagens.landingpage/unnamed (2).jpg" alt="Finn Hora de Aventura">
+            <img src="imagens.landingpage/unnamed.jpg" alt="Gatinho preto">
+            <img src="imagens.landingpage/unnamed (3).jpg" alt="Estrela roxa">
+        </div>
+    </section>
+
+    <section class="bloco" style="background-color: #fff0f3;">
+        <h2>O que dizem nossas clientes</h2>
+        <div style="font-style: italic; margin-bottom: 20px;">
+            <p>"O acabamento é impecável! Meu filho não solta mais o bichinho. Recomendo muito!"</p>
+            <strong>- Mariana Souza</strong>
+        </div>
+        <div style="font-style: italic;">
+            <p>"Pedi um personagem de desenho e ficou idêntico. Atendimento nota 10."</p>
+            <strong>- Ricardo Lima</strong>
+        </div>
+    </section>
+
+    <section class="bloco">
+        <h2>Como encomendar?</h2>  
+        <p>Trabalhamos sob encomenda para garantir exclusividade. O prazo médio de produção é de <strong>7 a 15 dias</strong>.</p>
+        <p>Clique no botão abaixo para nos chamar no WhatsApp:</p>
+       <button onclick="window.location.href='https://wa.me/5511999999999?text=Olá! Vi o site e gostaria de saber mais sobre os Amigurumis.'"> 
+    Quero fazer uma encomenda
+</button> 
+    </section>
+
+    <section style="margin-bottom: 50px; text-align: left; padding: 0 20px;">
+        <h3 style="text-align: center;">Dúvidas Comuns</h3>
+        <details style="margin-bottom: 10px; cursor: pointer;">
+            <summary><strong>Vocês entregam para todo o Brasil?</strong></summary>
+            <p>Sim! Enviamos via Correios ou transportadora com embalagem reforçada.</p>
+        </details>
+        <details style="margin-bottom: 10px; cursor: pointer;">
+            <summary><strong>Posso escolher as cores?</strong></summary>
+            <p>Com certeza! Você pode personalizar as cores de qualquer modelo do nosso portfólio.</p>
+        </details>
+    </section>
+
+    <footer style="margin-top: 50px; color: #999; font-size: 0.9em;">
+        <p>Amigurumi Shop © 2026 - Feito à mão com amor no Brasil</p>
+    </footer>
+</div>
+
+<script>
+    const btn = document.getElementById('dark-toggle');
+    btn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        
+        // Pequeno detalhe para mudar o texto do botão
+        if (document.body.classList.contains('dark-mode')) {
+            btn.innerText = "☀️ Modo Claro";
+        } else {
+            btn.innerText = "🌙 Modo Escuro";
+        }
+    });
+</script>
